@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block container %}
+    {% load static %}
+    <div class="mascotas">
+        <h1>Rescatados</h1>
+        <div class="categoria_estado">
+        {% for p in Perros %}
+            {% if p.estado == "Rescatado" %}
+                <div class="mascota col-lg-4">
+                    <img src='http://127.0.0.1:8000/static/media/{{p.foto_mascota}}'/>
+                    <h3>{{ p.nombre_mascota }}</h3>
+                    <h4>{{ p.raza_predominante }}</h4>
+                    <p>{{p.descripcion}}</p>
+                    {{p.estado}}
+                </div>
+            {% endif %}
+        {% endfor %}
+        </div>  
+        <br>
+        <h1>Disponible</h1>
+        <div class="categoria_estado">
+            {% for p in Perros %}
+                {% if p.estado == "Disponible" %}
+                    <div class="mascota col-lg-4">
+                        <img src='http://127.0.0.1:8000/static/media/{{p.foto_mascota}}'/>
+                        <h3>{{ p.nombre_mascota }}</h3>
+                        <h4>{{ p.raza_predominante }}</h4>
+                        <p>{{p.descripcion}}</p>
+                        {{p.estado}}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <br>
+        <h1>Adoptado</h1>
+            <div class="categoria_estado">
+            {% for p in Perros %}
+                {% if p.estado == "Adoptado" %}
+                    <div class="mascota col-lg-4">
+                        <img src='http://127.0.0.1:8000/static/media/{{p.foto_mascota}}'/>
+                        <h3>{{ p.nombre_mascota }}</h3>
+                        <h4>{{ p.raza_predominante }}</h4>
+                        <p>{{p.descripcion}}</p>
+                        {{p.estado}}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <style>
+            .mascotas{
+                float: left;
+            }
+            .mascota{
+                float: left;
+                width: 33.3%;
+            }
+            .mascota img{
+                width: 100%;
+            }
+            .mascota h1{
+                margin: 30px 0;
+                width: 100%;
+                clear: both;
+                text-align: center;
+            }
+            .mascota h3{
+                font-size: 30px;
+                margin: 10px 0;
+            }
+            .mascota h4{
+                font-size: 22px;
+                margin: 10px 0;
+            }
+            .mascota p{
+                font-weight: 300;
+                font-size: 17px;
+            }
+            .categoria_estado{
+                clear: both;
+                float: left;
+                display: block;
+            }
+    </style>
+{% endblock %}
+

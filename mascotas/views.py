@@ -1,7 +1,12 @@
 
 from django.shortcuts import render
 from django.http import HttpRequest
+# from . import models
+from datetime import datetime
+from .models import Perros
 
-def mascota(request):
-    return render(request, 'mascotas/signup.html', {})
-    # return render(request, 'index.html', {} )
+Perros = Perros.objects.all()
+
+
+def mascotas(request):
+    return render(request, 'mascotas/mascotas.html', {'Perros': Perros})
