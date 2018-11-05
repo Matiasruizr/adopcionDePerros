@@ -21,8 +21,8 @@ from mascotas import views as mascota_views
 
 urlpatterns = [
     
-    path('quienessomos/', views.quienes),
-    path('contacto/', views.contacto),
-    path('inicio/', views.inicio),
+    path('quienessomos/', views.quienes,name="quienes_somos"),
+    path('contacto/', views.contacto,name="contacto"),
+    path('inicio/', views.inicio,name="inicio"),
     path('admin/', admin.site.urls),
 ]

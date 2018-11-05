@@ -26,10 +26,9 @@
                         <nav>
                             <img src=" {% static 'img/logo.png' %}" alt="Logo de mis perris">
                             <div class="links">
-                                <a href="index.html">Inicio</a>
-                                <a href="quienessomos.html">Quienes somos</a>
-                                <a href="servicios.html">Servicios</a>
-                                <a href="contacto.html">Contacto</a>    
+                                <a href="{% url 'inicio' %}">Inicio</a>
+                                <a href="{% url 'quienes_somos' %}">Quienes somos</a>
+                                <a href="{% url 'contacto' %}">Contacto</a>    
                             </div>
                         </nav>
         {% block container %}
