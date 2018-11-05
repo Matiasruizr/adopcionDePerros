@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700');
+
+.contenedor{
+ max-width: 1000px;
+ width: 100%;
+ margin: 0 auto;
+}
+body{
+    font-family: 'Lato';
+    margin-top: 0px;
+}
+
+header{
+    background: #6dccaa;
+    color: white;
+
+}
+nav{
+    width: 100%;
+    float: left;
+    background: #85d4b7;
+    height: auto;
+}
+ .links{
+    margin-right: 5%;
+    float: right;
+}
+nav img{
+    float: left;
+    padding: 15px 25px;
+}
+
+nav a{
+    float: left;
+    color: white;
+    padding: 30px 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.banner{
+    text-align: center;
+    float: left;
+}
+
+.banner .owl-carousel .item{
+  position: relative;
+  width: 100%;
+}
+.banner .owl-carousel .item img{
+    width: 100%;
+  }
+.banner .owl-carousel article{
+    position: absolute;
+    text-align: left;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding-left: 100px;
+    background: rgba(0, 0, 0, 0.61);
+    box-sizing: border-box;
+}
+
+.galeria{
+    margin: 0 0 50px;
+}
+.galeria a{
+    width: 100%;
+}
+.galeria img{
+    width: 100%;
+    margin-bottom: 10px;
+    filter: contrast(100%);
+    transition: 0.3s ease-in-out;
+}
+
+.galeria img:hover{
+    filter: contrast(70%);
+}
+
+nav img{
+    max-width: 250px;
+}
+@media(max-width:768px){
+    nav img{
+        max-width: 200px;
+    }
+    .banner .owl-carousel article{
+        padding-left: 20px;
+    }
+    .banner .owl-carousel article h3{
+        font-size: 14px;
+    }
+    .banner .owl-carousel article p{
+        font-size: 10px;
+    }
+    .banner .owl-carousel article h4{
+        font-size: 12px;
+    }
+}
+
+
+
+.informacion{
+    width: 100%;
+    float: left;
+}
+
+.informacion p{
+    width: 31.3%;
+    float: left;
+    font-weight: 600;
+    padding-left: 2%;
+    margin: 5px 0;
+}
+.informacion p:nth-child(2){
+   text-align: center;
+}
+
+.informacion .redes_sociales{
+    width: 23.3%;
+    float: left;
+    margin: 5px 5%;
+    padding-bottom: 30px;
+}
+.informacion .redes_sociales i{
+    color: #6dccaa;
+    background: white;
+    padding: 5px;
+    border-radius: 100%;
+    width: 19px;
+    cursor: pointer;
+    text-align: center;
+}
+.titulo{
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.info h1{
+    margin: 30px 0 10px;
+    font-size: 20px;
+}
+.info h2{
+    color: #808080;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.info p{
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1.2;
+    clear: both;
+}
+.info a{
+   text-decoration: none;
+   border: 2px solid black;
+   color: black;
+   padding: 6px;
+   float: left;
+   font-size: 14px;
+   font-weight: 600;
+   margin-top: 10px;
+}
+.info hr{
+   width: 20%;
+   border-bottom: 4px solid black;
+}
+.texto_izquierda{
+    text-align: left;
+    padding-left: 2%;
+}
+.texto_izquierda hr{
+    float: left;
+}
+.texto_derecha{
+    text-align: right;
+    padding-right: 2%;
+}
+.texto_derecha hr{ 
+   float: right;
+   clear: both;
+   margin: 20px 0;
+}
+
+footer{
+    background: #e6e6e6;
+    width: 100%;
+    margin-top: 30px;
+}
+footer p{
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.perroCentrado{
+    width: 63%;
+    margin: 0 auto;
+}
+/* OWL */
+.owl-dots{
+    display: none!important;
+}
+
+
+/* ------------------- CONTACTO ------------------------ */
+
+form{
+
+}
+.contacto{
+    background: url('http://4.bp.blogspot.com/-UJZEEKJS8Mk/VGGdQgDS5QI/AAAAAAAAALE/E3pi830T0NM/s1600/149-photos-of-dogs-of-various-breeds.jpg');
+    background-size: 100%;
+}
+input, select{
+    width: 100%;
+    padding: 7.5px 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    float: left;
+    display: inline;
+    background: #e2e2e2;
+    border: none;
+
+}
+input[type=submit]{
+    margin: 15px 20%;
+    background: #6dccaa;
+    border-radius: 20px;
+    border:none;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 60%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    margin: 15px 18%;
+    background: #6dccbb;
+    width: 64%;
+
+}
+label{
+    color:black;
+    font-size: 17px;
+    width: 100%;
+    margin: 2px 0;
+    display: inline;
+    float: left;
+}
+.contacto h2{
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+    float: left;
+    margin: 15px 0;
+}
+.contacto form{
+    background: white;
+    float: left;
+    border: 1px solid rgba(128,128,128,0.5);
+    -webkit-box-shadow: 11px 11px 10px 0px rgba(128,128,128,0.5);
+    -moz-box-shadow: 11px 11px 10px 0px rgba(128,128,128,0.5);
+    box-shadow: 11px 11px 10px 0px rgba(128,128,128,0.5);
+    border-radius: 15px;
+    margin: 30px 0;
+    padding: 15px;
+
+}
+
+.lightbox .lb-image{
+    margin: 0!important;
+    border: none!important;
+}
+@media(max-width:960px){
+    section{
+        width: 100%;
+    }
+}
