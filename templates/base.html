@@ -20,6 +20,18 @@
 <body>
      
     <div class="container">
+            <header class="row">
+            
+                    <div class="col-lg-12">
+                        <nav>
+                            <img src=" {% static 'img/logo.png' %}" alt="Logo de mis perris">
+                            <div class="links">
+                                <a href="index.html">Inicio</a>
+                                <a href="quienessomos.html">Quienes somos</a>
+                                <a href="servicios.html">Servicios</a>
+                                <a href="contacto.html">Contacto</a>    
+                            </div>
+                        </nav>
         {% block container %}
         {% endblock %}
     </div>

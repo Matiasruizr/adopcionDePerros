@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block container %}
+{% load static %}
+     
+            <div class="banner">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="{% static 'img/adoptados/Apolo.jpg' %}" alt="Un perro">
+                            <article>
+                                <h3>Este es el mejor perro</h3>
+                                <p>Desde que adopte este perro no tengo otro perro</p>
+                                <h4>- Juan</h4>
+                            </article>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'img/adoptados/Duque.jpg' %}" alt="Un perro">
+                            <article>
+                                <h3>Este es el mejor perro</h3>
+                                <p>Desde que adopte este perro no tengo otro perro</p>
+                                <h4>- Juan</h4>
+                            </article>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'img/adoptados/Tom.jpg' %}" alt="Un perro">
+                            <article>
+                                <h3>Este es el mejor perro</h3>
+                                <p>Desde que adopte este perro no tengo otro perro</p>
+                                <h4>- Juan</h4>
+                            </article>
+                        </div>
+                       
+                    </div>
+
+            </div>
+        
+            <div class="informacion">
+                <p>+569 9 98765431</p>
+                <p>Rescate y adopcion de perros</p>
+                <div class="redes_sociales">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="row contacto">
+        <div class="col-lg-offset-4 col-lg-4">
+         
+           <form action="enviar" method="post" data-aos="flip-left" >
+                <h2>Contactanos!</h2>
+            
+            <label for="email">Correo electronico :</label>
+            <input type="email" name="email" id="email" required placeholder="nombre@gmail.com">
+        
+            <label for="rut">Rut :</label>
+            <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+        
+            <label for="txtNombreCompleto">Nombre Completo :</label>
+            <input type="text" name="text" id="txtNombreCompleto"  required placeholder="Ingrese nombre completo">
+            
+            <label for="fecha">Fecha Nacimiento :</label>
+            <input type="date" name="date" id="">
+        
+            <label for="telefono">Telefono :</label>
+            <input type="number" name="number" required minlength="12" placeholder="+569">
+        
+        
+            <label for="Region">Region :</label>
+            <Select name="select " id="">
+                <option value="ta">Tarapacá</option>
+                <option value="an">Antofagasta</option>
+                <option value="at">Atacama</option>
+                <option value="co">Coquimbo</option>
+                <option value="va">Valparaiso</option>
+                <option value="oh">O'Higgins</option>
+                <option value="ma">Maule</option>
+                <option value="bi">Biobío</option>
+                <option value="la">La Araucanía</option>
+                <option value="lo">Los Ríos</option>
+                <option value="los">Los Lagos</option>
+                <option value="ay">Aysén</option>
+                <option value="mag">Magallanes y Antártica</option>
+                <option value="ari">Arica y Parinacota</option>
+                <option value="re">Region Metropolitana</option>
+            </Select>
+            
+                <label for="Ciudad">Ciudad:</label>
+                <Select name="select">
+                    <option value="sa">Santiago</option>
+                    <option value="co">Concepción</option>
+                    <option value="la">La Serena</option>
+                    <option value="va">Valdivia</option>
+                    <option value="te">Temuco</option>
+                    <option value="pu">Puerto Montt</option>
+                    <option value="ta">Talca</option>
+                    <option value="pun">Punta Arenas</option>
+                </Select>
+            
+            
+                <label for="Vivienda">Tipo de Vivienda :</label>
+                <select name="select" id="">
+                    <option value="pg">Casa con patio grande</option>
+                    <option value="pc">Casa con patio chico</option>
+                    <option value="sp">Casa sin patio</option>
+                    <option value="dp">Departamento</option>
+                </select>
+               <input type="submit">
+           </form>
+        </div>
+    </div>
+{% endblock %}

@@ -4,10 +4,12 @@
  max-width: 1000px;
  width: 100%;
  margin: 0 auto;
+ overflow: hidden;
 }
 body{
     font-family: 'Lato';
     margin-top: 0px;
+    
 }
 
 header{
