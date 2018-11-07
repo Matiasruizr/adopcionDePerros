@@ -3,9 +3,6 @@ from django.shortcuts import render
 
 
 
-
-
-
 def inicio(request):
     return render(request,  'inicio.html', {})
 
@@ -14,4 +11,6 @@ def quienes(request):
 
 def contacto(request):
     return render(request,  'contacto.html', {})
-    
+
+def login(request):
+    return render(request,  'login.html', {})

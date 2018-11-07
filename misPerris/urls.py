@@ -16,8 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from misPerris import views
-from mascotas import views as mascota_views
-
+# from mascotas import views as mascota_views
+# from .forms import PerrosForm
 
 urlpatterns = [
     
@@ -25,5 +25,8 @@ urlpatterns = [
     path('contacto/', views.contacto,name="contacto"),
     path('inicio/', views.inicio,name="inicio"),
     path('admin/', admin.site.urls),
-    path('mascotas/',mascota_views.mascotas),
+    # path('mascotas/',mascota_views.mascotas, name="mascotas"),
+    # path('mascotas/new',mascota_views.new),
+    path('login/',views.login, name="login"),
+
 ]
