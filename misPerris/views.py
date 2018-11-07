@@ -1,6 +1,6 @@
 
 from django.shortcuts import render
-
+from .forms import UserForm
 
 
 def inicio(request):
@@ -14,3 +14,7 @@ def contacto(request):
 
 def login(request):
     return render(request,  'login.html', {})
+
+def registro_usuario(request):
+    form = UserForm()
+    return render(request,  'registro.html', {'form': form})

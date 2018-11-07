@@ -6,11 +6,11 @@ from django.shortcuts import render
 from .models import Perros
 from .forms import PerrosForm
 
-# Perros = Perros.objects.all()
+Perros = Perros.objects.all()
 
 
-# def mascotas(request):
-#     return render(request, 'mascotas/mascotas.html', {'Perros': Perros})
+def mascotas(request):
+    return render(request, 'mascotas/mascotas.html', {'Perros': Perros})
     
 def new(request):
     form = PerrosForm()

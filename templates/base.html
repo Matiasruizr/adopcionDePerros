@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,11 +28,17 @@
                             <div class="links">
                                 <a href="{% url 'inicio' %}">Inicio</a>
                                 <a href="{% url 'quienes_somos' %}">Quienes somos</a>
-                                {% comment %} <a href="{% url 'mascotas' %}">Mascotas</a>   {% endcomment %}
-                                <a href="{% url 'contacto' %}">Contacto</a>    
+                                <a href="{% url 'registro_mascota' %}">Registro Mascota</a> 
+                                <a href="{% url 'mascotas' %}">Mascotas</a>  
+                                <a href="{% url 'contacto' %}">Contacto</a> 
+                                <a href="{% url 'login' %}">Inicio</a>
+                                <a href="{% url 'registro' %}">Registo</a>
                             </div>
                         </nav>
+           
         {% block container %}
+
+        
         {% endblock %}
     </div>
     <footer>
