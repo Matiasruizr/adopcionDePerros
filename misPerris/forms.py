@@ -11,6 +11,7 @@ class UserForm(forms.ModelForm):
             'email',
             'first_name',
             'last_name',
+            'password'
         )
         labels = {
             'username':'Nombre de usuario',

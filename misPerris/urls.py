@@ -24,10 +24,8 @@ urlpatterns = [
     path('mascotas/', include('mascotas.urls')),
     path('quienessomos/', views.quienes,name="quienes_somos"),
     path('contacto/', views.contacto,name="contacto"),
-    path('inicio/', views.inicio,name="inicio"),
+    path('/inicio', views.inicio,name="inicio"),
     path('admin/', admin.site.urls),
-    # path('mascotas/',mascota_views.mascotas, name="mascotas"),
-    # path('mascotas/new',mascota_views.new),
-    path('login/',views.login, name="login"),
+    path('',views.login, name="login"),
     path('new/',views.registro_usuario, name="registro")
 ]

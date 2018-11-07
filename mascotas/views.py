@@ -14,4 +14,8 @@ def mascotas(request):
     
 def new(request):
     form = PerrosForm()
-    return render(request, 'mascotas/new.html', {'form': form})
+    if request.user.is_superuser:
+        return render(request, 'mascotas/new.html', {'form': form})
+    else:
+        return render(request, 'mascotas/errorpermisos.html', {})
+  
