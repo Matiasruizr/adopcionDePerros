@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
+   'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -52,7 +52,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'misPerris.urls'
 
+LOGIN_URL = 'user:auth_login'
+LOGIN_REDIRECT_URL = '/'
 
+LOGOUT_URL = 'deslogear'
+LOGOUT_REDIRECT_URL = '/'
 
 TEMPLATES = [
     {

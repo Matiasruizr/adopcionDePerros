@@ -21,7 +21,7 @@
      
     <div class="container">
             <header class="row">
-            
+            Has  iniciado sesion como: {{ user }}
                     <div class="col-lg-12">
                         <nav>
                             <img src=" {% static 'img/logo.png' %}" alt="Logo de mis perris">
@@ -31,8 +31,9 @@
                                 <a href="{% url 'registro_mascota' %}">Registro Mascota</a> 
                                 <a href="{% url 'mascotas' %}">Mascotas</a>  
                                 <a href="{% url 'contacto' %}">Contacto</a> 
-                                <a href="{% url 'login' %}">Inicio</a>
+                                <a href="{% url 'ingreso' %}">Inicio</a>
                                 <a href="{% url 'registro' %}">Registo</a>
+                                <a href="{% url 'deslogear' %}">Cerrar sesion</a>
                             </div>
                         </nav>
            
@@ -44,7 +45,7 @@
     <footer>
         <p>Desarrollo web y mobile</p>
 
-            {{ mensaje }}
+           
 
     </footer>
 

@@ -12,9 +12,11 @@ def quienes(request):
 def contacto(request):
     return render(request,  'contacto.html', {})
 
-def login(request):
-    return render(request,  'login.html', {})
+def ingresando(request):
+    return render(request,  'auth/ingresar.html', {})
+
 
 def registro_usuario(request):
     form = UserForm()
     return render(request,  'registro.html', {'form': form})
+
